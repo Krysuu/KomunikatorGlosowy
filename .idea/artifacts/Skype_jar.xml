@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Skype:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Skype_jar</output-path>
+    <root id="archive" name="Skype.jar">
+      <element id="module-output" name="Skype" />
+    </root>
+  </artifact>
+</component>

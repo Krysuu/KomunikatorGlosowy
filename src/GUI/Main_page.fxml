@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.Main_page_Controller">
+   <children>
+      <HBox prefHeight="600.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="209.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                     <children>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="252.0" prefWidth="190.0">
+                           <children>
+                              <Label fx:id="nickname" alignment="CENTER" contentDisplay="CENTER" layoutX="14.0" layoutY="160.0" prefHeight="36.0" prefWidth="180.0" text="Nick" textAlignment="CENTER" AnchorPane.bottomAnchor="-3.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="160.0">
+                                 <font>
+                                    <Font size="16.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="avatar" fitHeight="173.0" fitWidth="194.0" layoutX="-7.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true" />
+                              <Label layoutX="8.0" layoutY="67.0" onMouseClicked="#setAvatar" prefHeight="51.0" prefWidth="176.0" text="Kliknij by ustawic avatar">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font></Label>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="411.0" prefWidth="186.0">
+                           <children>
+                              <Button layoutX="14.0" layoutY="14.0" minHeight="35.0" mnemonicParsing="false" onAction="#connect" prefHeight="35.0" prefWidth="60.0" text="Połącz" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="10.0" />
+                              <Button layoutX="90.0" layoutY="14.0" minHeight="35.0" mnemonicParsing="false" onAction="#disconnect" prefHeight="35.0" prefWidth="60.0" text="Rozłącz" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                              <ListView fx:id="listView" layoutY="49.0" prefHeight="358.0" prefWidth="176.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="50.0" />
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+            <Separator orientation="VERTICAL" prefHeight="600.0" prefWidth="30.0" />
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="600.0" prefWidth="629.0">
+               <children>
+                  <TextField fx:id="pisanie" layoutX="17.0" layoutY="351.0" onKeyTyped="#wyslij_wiadomosc" prefHeight="25.0" prefWidth="406.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" />
+                  <TextArea fx:id="chat" editable="false" layoutX="14.0" layoutY="17.0" prefHeight="533.0" prefWidth="587.0" AnchorPane.bottomAnchor="50.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="17.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
